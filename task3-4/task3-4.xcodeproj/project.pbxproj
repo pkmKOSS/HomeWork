@@ -8,22 +8,32 @@
 
 /* Begin PBXBuildFile section */
 		6B55A5AA28DCDB07005CFBFE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B55A5A928DCDB07005CFBFE /* AppDelegate.swift */; };
-		6B55A5AC28DCDB07005CFBFE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B55A5AB28DCDB07005CFBFE /* SceneDelegate.swift */; };
-		6B55A5AE28DCDB07005CFBFE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B55A5AD28DCDB07005CFBFE /* ViewController.swift */; };
+		6B55A5AE28DCDB07005CFBFE /* AuthorizationScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B55A5AD28DCDB07005CFBFE /* AuthorizationScreenViewController.swift */; };
 		6B55A5B128DCDB08005CFBFE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6B55A5AF28DCDB08005CFBFE /* Main.storyboard */; };
 		6B55A5B328DCDB09005CFBFE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6B55A5B228DCDB09005CFBFE /* Assets.xcassets */; };
 		6B55A5B628DCDB09005CFBFE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6B55A5B428DCDB09005CFBFE /* LaunchScreen.storyboard */; };
+		6BED676B28E059B000F37B63 /* UILabel+addLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BED676A28E059B000F37B63 /* UILabel+addLabel.swift */; };
+		6BED676D28E05B1000F37B63 /* UIButton+addButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BED676C28E05B1000F37B63 /* UIButton+addButton.swift */; };
+		6BED676F28E05BF100F37B63 /* UITextfield+addTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BED676E28E05BF100F37B63 /* UITextfield+addTextField.swift */; };
+		6BED677228E06FF800F37B63 /* BirthdayScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BED677128E06FF800F37B63 /* BirthdayScreenViewController.swift */; };
+		6BED677428E083AA00F37B63 /* ViewWithBirthdays.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BED677328E083AA00F37B63 /* ViewWithBirthdays.swift */; };
+		6BED677728E0A57900F37B63 /* PersonProfileScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BED677628E0A57900F37B63 /* PersonProfileScreenViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		6B55A5A628DCDB07005CFBFE /* task3-4.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "task3-4.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6B55A5A928DCDB07005CFBFE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		6B55A5AB28DCDB07005CFBFE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		6B55A5AD28DCDB07005CFBFE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		6B55A5AD28DCDB07005CFBFE /* AuthorizationScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorizationScreenViewController.swift; sourceTree = "<group>"; };
 		6B55A5B028DCDB08005CFBFE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		6B55A5B228DCDB09005CFBFE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6B55A5B528DCDB09005CFBFE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6B55A5B728DCDB09005CFBFE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6BED676A28E059B000F37B63 /* UILabel+addLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILabel+addLabel.swift"; sourceTree = "<group>"; };
+		6BED676C28E05B1000F37B63 /* UIButton+addButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+addButton.swift"; sourceTree = "<group>"; };
+		6BED676E28E05BF100F37B63 /* UITextfield+addTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextfield+addTextField.swift"; sourceTree = "<group>"; };
+		6BED677128E06FF800F37B63 /* BirthdayScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BirthdayScreenViewController.swift; sourceTree = "<group>"; };
+		6BED677328E083AA00F37B63 /* ViewWithBirthdays.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewWithBirthdays.swift; sourceTree = "<group>"; };
+		6BED677628E0A57900F37B63 /* PersonProfileScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonProfileScreenViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +66,52 @@
 		6B55A5A828DCDB07005CFBFE /* task3-4 */ = {
 			isa = PBXGroup;
 			children = (
+				6BED677528E0A53800F37B63 /* PersonProfileSreen */,
+				6BED677028E06FC500F37B63 /* BirthdayScreenList */,
+				6BED676728E0586400F37B63 /* AuthorizationScreen */,
+				6BED676928E0599E00F37B63 /* Extension */,
 				6B55A5A928DCDB07005CFBFE /* AppDelegate.swift */,
-				6B55A5AB28DCDB07005CFBFE /* SceneDelegate.swift */,
-				6B55A5AD28DCDB07005CFBFE /* ViewController.swift */,
 				6B55A5AF28DCDB08005CFBFE /* Main.storyboard */,
 				6B55A5B228DCDB09005CFBFE /* Assets.xcassets */,
 				6B55A5B428DCDB09005CFBFE /* LaunchScreen.storyboard */,
 				6B55A5B728DCDB09005CFBFE /* Info.plist */,
 			);
 			path = "task3-4";
+			sourceTree = "<group>";
+		};
+		6BED676728E0586400F37B63 /* AuthorizationScreen */ = {
+			isa = PBXGroup;
+			children = (
+				6B55A5AD28DCDB07005CFBFE /* AuthorizationScreenViewController.swift */,
+			);
+			path = AuthorizationScreen;
+			sourceTree = "<group>";
+		};
+		6BED676928E0599E00F37B63 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				6BED676A28E059B000F37B63 /* UILabel+addLabel.swift */,
+				6BED676C28E05B1000F37B63 /* UIButton+addButton.swift */,
+				6BED676E28E05BF100F37B63 /* UITextfield+addTextField.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		6BED677028E06FC500F37B63 /* BirthdayScreenList */ = {
+			isa = PBXGroup;
+			children = (
+				6BED677128E06FF800F37B63 /* BirthdayScreenViewController.swift */,
+				6BED677328E083AA00F37B63 /* ViewWithBirthdays.swift */,
+			);
+			path = BirthdayScreenList;
+			sourceTree = "<group>";
+		};
+		6BED677528E0A53800F37B63 /* PersonProfileSreen */ = {
+			isa = PBXGroup;
+			children = (
+				6BED677628E0A57900F37B63 /* PersonProfileScreenViewController.swift */,
+			);
+			path = PersonProfileSreen;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -159,9 +206,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6B55A5AE28DCDB07005CFBFE /* ViewController.swift in Sources */,
+				6BED676B28E059B000F37B63 /* UILabel+addLabel.swift in Sources */,
+				6BED677728E0A57900F37B63 /* PersonProfileScreenViewController.swift in Sources */,
+				6BED676F28E05BF100F37B63 /* UITextfield+addTextField.swift in Sources */,
+				6BED677428E083AA00F37B63 /* ViewWithBirthdays.swift in Sources */,
+				6B55A5AE28DCDB07005CFBFE /* AuthorizationScreenViewController.swift in Sources */,
 				6B55A5AA28DCDB07005CFBFE /* AppDelegate.swift in Sources */,
-				6B55A5AC28DCDB07005CFBFE /* SceneDelegate.swift in Sources */,
+				6BED677228E06FF800F37B63 /* BirthdayScreenViewController.swift in Sources */,
+				6BED676D28E05B1000F37B63 /* UIButton+addButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
