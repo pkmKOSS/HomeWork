@@ -9,21 +9,25 @@
 /* Begin PBXBuildFile section */
 		6B55A5AA28DCDB07005CFBFE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B55A5A928DCDB07005CFBFE /* AppDelegate.swift */; };
 		6B55A5AC28DCDB07005CFBFE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B55A5AB28DCDB07005CFBFE /* SceneDelegate.swift */; };
-		6B55A5AE28DCDB07005CFBFE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B55A5AD28DCDB07005CFBFE /* ViewController.swift */; };
+		6B55A5AE28DCDB07005CFBFE /* GlobalTimeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B55A5AD28DCDB07005CFBFE /* GlobalTimeViewController.swift */; };
 		6B55A5B128DCDB08005CFBFE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6B55A5AF28DCDB08005CFBFE /* Main.storyboard */; };
 		6B55A5B328DCDB09005CFBFE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6B55A5B228DCDB09005CFBFE /* Assets.xcassets */; };
 		6B55A5B628DCDB09005CFBFE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6B55A5B428DCDB09005CFBFE /* LaunchScreen.storyboard */; };
+		6B82411028ECB8F10016ACA6 /* TimerStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6B82410E28ECB8F10016ACA6 /* TimerStoryboard.storyboard */; };
+		6BBE1A7628EAA8DD007E774B /* TimerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BBE1A7528EAA8DD007E774B /* TimerViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		6B55A5A628DCDB07005CFBFE /* task3-4.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "task3-4.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6B55A5A928DCDB07005CFBFE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6B55A5AB28DCDB07005CFBFE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		6B55A5AD28DCDB07005CFBFE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		6B55A5AD28DCDB07005CFBFE /* GlobalTimeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalTimeViewController.swift; sourceTree = "<group>"; };
 		6B55A5B028DCDB08005CFBFE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		6B55A5B228DCDB09005CFBFE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6B55A5B528DCDB09005CFBFE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6B55A5B728DCDB09005CFBFE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6B82410F28ECB8F10016ACA6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "task3-4/Base.lproj/TimerStoryboard.storyboard"; sourceTree = "<group>"; };
+		6BBE1A7528EAA8DD007E774B /* TimerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,7 +44,7 @@
 		6B55A59D28DCDB07005CFBFE = {
 			isa = PBXGroup;
 			children = (
-				6B55A5A828DCDB07005CFBFE /* task3-4 */,
+				6B55A5A828DCDB07005CFBFE /* Lesson-11 */,
 				6B55A5A728DCDB07005CFBFE /* Products */,
 			);
 			sourceTree = "<group>";
@@ -53,18 +57,28 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		6B55A5A828DCDB07005CFBFE /* task3-4 */ = {
+		6B55A5A828DCDB07005CFBFE /* Lesson-11 */ = {
 			isa = PBXGroup;
 			children = (
+				6BBE1A7428EAA8C5007E774B /* Timer */,
 				6B55A5A928DCDB07005CFBFE /* AppDelegate.swift */,
 				6B55A5AB28DCDB07005CFBFE /* SceneDelegate.swift */,
-				6B55A5AD28DCDB07005CFBFE /* ViewController.swift */,
+				6B55A5AD28DCDB07005CFBFE /* GlobalTimeViewController.swift */,
 				6B55A5AF28DCDB08005CFBFE /* Main.storyboard */,
+				6B82410E28ECB8F10016ACA6 /* TimerStoryboard.storyboard */,
 				6B55A5B228DCDB09005CFBFE /* Assets.xcassets */,
 				6B55A5B428DCDB09005CFBFE /* LaunchScreen.storyboard */,
 				6B55A5B728DCDB09005CFBFE /* Info.plist */,
 			);
-			path = "task3-4";
+			path = "Lesson-11";
+			sourceTree = "<group>";
+		};
+		6BBE1A7428EAA8C5007E774B /* Timer */ = {
+			isa = PBXGroup;
+			children = (
+				6BBE1A7528EAA8DD007E774B /* TimerViewController.swift */,
+			);
+			path = Timer;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -129,6 +143,7 @@
 				6B55A5B628DCDB09005CFBFE /* LaunchScreen.storyboard in Resources */,
 				6B55A5B328DCDB09005CFBFE /* Assets.xcassets in Resources */,
 				6B55A5B128DCDB08005CFBFE /* Main.storyboard in Resources */,
+				6B82411028ECB8F10016ACA6 /* TimerStoryboard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -159,7 +174,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6B55A5AE28DCDB07005CFBFE /* ViewController.swift in Sources */,
+				6BBE1A7628EAA8DD007E774B /* TimerViewController.swift in Sources */,
+				6B55A5AE28DCDB07005CFBFE /* GlobalTimeViewController.swift in Sources */,
 				6B55A5AA28DCDB07005CFBFE /* AppDelegate.swift in Sources */,
 				6B55A5AC28DCDB07005CFBFE /* SceneDelegate.swift in Sources */,
 			);
@@ -182,6 +198,14 @@
 				6B55A5B528DCDB09005CFBFE /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		6B82410E28ECB8F10016ACA6 /* TimerStoryboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6B82410F28ECB8F10016ACA6 /* Base */,
+			);
+			name = TimerStoryboard.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

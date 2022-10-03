@@ -7,11 +7,9 @@
 
 import UIKit
 
-class ViewController: UIViewController {
-
+/// Стартовый экран - экран мировых часов.
+final class GlobalTimeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
     }
 }
-
