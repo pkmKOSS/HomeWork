@@ -12,9 +12,9 @@ final class TimerViewController: UIViewController {
 
     // MARK: - visual components
 
-    @IBOutlet weak var stopView: UIView!
-    @IBOutlet weak var countDownTimerPickerView: UIPickerView!
-    @IBOutlet weak var startView: UIView!
+    @IBOutlet private weak var stopView: UIView!
+    @IBOutlet private weak var countDownTimerPickerView: UIPickerView!
+    @IBOutlet private weak var startView: UIView!
 
     // MARK: - private properties
 
@@ -28,29 +28,16 @@ final class TimerViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         configureViews()
-        countDownTimerPickerView.delegate = self
-        countDownTimerPickerView.dataSource = self
+        addDelegates()
         createTapRecognaizers()
     }
 
-    // MARK: - IBAActions
-    
-    @IBAction func startTimerAction(_ sender: Any) {
-        configurePicker()
-        startTimer()
-    }
-
-    @IBAction func stopTimerAction(_ sender: Any) {
-        timer.invalidate()
-        countDownTimerPickerView.selectRow(0, inComponent: 0, animated: true)
-        countDownTimerPickerView.reloadComponent(0)
-        countDownTimerPickerView.selectRow(0, inComponent: 1, animated: true)
-        countDownTimerPickerView.reloadComponent(1)
-        countDownTimerPickerView.selectRow(0, inComponent: 2, animated: true)
-        countDownTimerPickerView.reloadComponent(2)
-    }
-    
     // MARK: - private funcs
+
+    private func addDelegates() {
+        countDownTimerPickerView.delegate = self
+        countDownTimerPickerView.dataSource = self
+    }
 
     private func configureViews() {
         stopView.layer.borderColor = UIColor.black.cgColor
@@ -88,12 +75,12 @@ final class TimerViewController: UIViewController {
 
     // MARK: - @objc funcs
 
-    @objc func startAction() {
+    @objc private func startAction() {
         configurePicker()
         startTimer()
     }
 
-    @objc func updateTimerAction() {
+    @objc private func updateTimerAction() {
         secondsTime -= 1
         if secondsTime != 0 {
             countDownTimerPickerView.selectRow(secondsTime, inComponent: 2, animated: true)
@@ -116,9 +103,25 @@ final class TimerViewController: UIViewController {
             countDownTimerPickerView.reloadComponent(2)
         }
     }
+
+    @objc private func startTimerAction(_ sender: Any) {
+        configurePicker()
+        startTimer()
+    }
+
+    @objc private    func stopTimerAction(_ sender: Any) {
+        timer.invalidate()
+        countDownTimerPickerView.selectRow(0, inComponent: 0, animated: true)
+        countDownTimerPickerView.reloadComponent(0)
+        countDownTimerPickerView.selectRow(0, inComponent: 1, animated: true)
+        countDownTimerPickerView.reloadComponent(1)
+        countDownTimerPickerView.selectRow(0, inComponent: 2, animated: true)
+        countDownTimerPickerView.reloadComponent(2)
+    }
+
 }
 
-// Добавляет методы делегата и датасорс пикера.
+// MARK: - UIPickerViewDelegate, UIPickerViewDataSource
 extension TimerViewController: UIPickerViewDelegate, UIPickerViewDataSource {
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
         3
@@ -126,27 +129,27 @@ extension TimerViewController: UIPickerViewDelegate, UIPickerViewDataSource {
     
     func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
         switch component {
-        case 0:
-            return 24
-        case 1:
-            return 60
-        case 2:
-            return 60
-        default:
-            return 0
+            case 0:
+                return 24
+            case 1:
+                return 60
+            case 2:
+                return 60
+            default:
+                return 0
         }
     }
     
     func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
         switch component {
-        case 0:
-            return "\(row) ч"
-        case 1:
-            return "\(row) мин"
-        case 2:
-            return "\(row) с"
-        default:
-            return ""
+            case 0:
+                return "\(row) ч"
+            case 1:
+                return "\(row) мин"
+            case 2:
+                return "\(row) с"
+            default:
+                return ""
         }
     }
 }
