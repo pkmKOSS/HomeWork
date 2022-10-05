@@ -44,7 +44,7 @@
 		6B55A59D28DCDB07005CFBFE = {
 			isa = PBXGroup;
 			children = (
-				6B55A5A828DCDB07005CFBFE /* Lesson-11 */,
+				6B55A5A828DCDB07005CFBFE /* task3-4 */,
 				6B55A5A728DCDB07005CFBFE /* Products */,
 			);
 			sourceTree = "<group>";
@@ -57,20 +57,20 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		6B55A5A828DCDB07005CFBFE /* Lesson-11 */ = {
+		6B55A5A828DCDB07005CFBFE /* task3-4 */ = {
 			isa = PBXGroup;
 			children = (
+				6B82410E28ECB8F10016ACA6 /* TimerStoryboard.storyboard */,
 				6BBE1A7428EAA8C5007E774B /* Timer */,
 				6B55A5A928DCDB07005CFBFE /* AppDelegate.swift */,
 				6B55A5AB28DCDB07005CFBFE /* SceneDelegate.swift */,
 				6B55A5AD28DCDB07005CFBFE /* GlobalTimeViewController.swift */,
 				6B55A5AF28DCDB08005CFBFE /* Main.storyboard */,
-				6B82410E28ECB8F10016ACA6 /* TimerStoryboard.storyboard */,
 				6B55A5B228DCDB09005CFBFE /* Assets.xcassets */,
 				6B55A5B428DCDB09005CFBFE /* LaunchScreen.storyboard */,
 				6B55A5B728DCDB09005CFBFE /* Info.plist */,
 			);
-			path = "Lesson-11";
+			path = "task3-4";
 			sourceTree = "<group>";
 		};
 		6BBE1A7428EAA8C5007E774B /* Timer */ = {
