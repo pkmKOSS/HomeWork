@@ -16,5 +16,9 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         _ scene: UIScene,
         willConnectTo session: UISceneSession,
         options connectionOptions: UIScene.ConnectionOptions
-    ) {}
+    ) {
+        let tabBarController = MainTabBarController()
+        self.window?.rootViewController = tabBarController
+        self.window?.backgroundColor = .white
+    }
 }
